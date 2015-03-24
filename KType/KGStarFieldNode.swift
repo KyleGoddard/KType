@@ -8,12 +8,12 @@
 
 import SpriteKit
 
-let baseAlpha: CGFloat = 0.1
-let baseDuration: CGFloat = 0.5
-let defaultDelay: NSTimeInterval = 0.03
-let starSize = CGSizeMake(15.0, 5.0)
-
 class KGStarFieldNode: SKNode {
+    
+    private let baseAlpha: CGFloat = 0.1
+    private let baseDuration: CGFloat = 0.5
+    private let defaultDelay: NSTimeInterval = 0.03
+    private let starSize = CGSizeMake(15.0, 5.0)
     
     internal func beginSpawningStars() {
         let update = SKAction.runBlock {
