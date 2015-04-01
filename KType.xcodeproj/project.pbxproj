@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F329C171AC497090024B533 /* KGPlayerShipNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F329C161AC497090024B533 /* KGPlayerShipNode.swift */; };
 		1FBB5E491AB7B84400BD4E82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB5E481AB7B84400BD4E82 /* AppDelegate.swift */; };
 		1FBB5E4B1AB7B84400BD4E82 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1FBB5E4A1AB7B84400BD4E82 /* GameScene.sks */; };
 		1FBB5E4D1AB7B84400BD4E82 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB5E4C1AB7B84400BD4E82 /* GameScene.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F329C161AC497090024B533 /* KGPlayerShipNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGPlayerShipNode.swift; sourceTree = "<group>"; };
 		1FBB5E431AB7B84400BD4E82 /* KType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KType.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBB5E471AB7B84400BD4E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FBB5E481AB7B84400BD4E82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				1FBB5E551AB7B84400BD4E82 /* LaunchScreen.xib */,
 				1FBB5E461AB7B84400BD4E82 /* Supporting Files */,
 				1FBB5E701AB9030700BD4E82 /* KGStarFieldNode.swift */,
+				1F329C161AC497090024B533 /* KGPlayerShipNode.swift */,
 			);
 			path = KType;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FBB5E4D1AB7B84400BD4E82 /* GameScene.swift in Sources */,
+				1F329C171AC497090024B533 /* KGPlayerShipNode.swift in Sources */,
 				1FBB5E4F1AB7B84400BD4E82 /* GameViewController.swift in Sources */,
 				1FBB5E711AB9030700BD4E82 /* KGStarFieldNode.swift in Sources */,
 				1FBB5E491AB7B84400BD4E82 /* AppDelegate.swift in Sources */,
@@ -419,6 +423,7 @@
 				1FBB5E681AB7B84500BD4E82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FBB5E691AB7B84500BD4E82 /* Build configuration list for PBXNativeTarget "KTypeTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				1FBB5E6B1AB7B84500BD4E82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
