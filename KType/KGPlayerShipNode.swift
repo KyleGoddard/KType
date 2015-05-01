@@ -14,7 +14,10 @@ class KGPlayerShipNode: SKSpriteNode {
     let defaultTextureName = "SpaceFighter"
     let defaultSize:CGSize = CGSize(width: 200.0, height: 53.0)
     
-    override init() {
+    //new
+    let defaultShipSpeed = 100;
+    
+    init() {
         
         let texture = SKTexture(imageNamed: defaultTextureName)
         let color = UIColor.redColor()

@@ -19,7 +19,7 @@ class GameScene: SKScene {
         loadPlayerShip()
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         /* Called when a touch begins */
     }
    
