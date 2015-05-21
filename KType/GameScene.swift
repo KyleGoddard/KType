@@ -21,10 +21,26 @@ class GameScene: SKScene {
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         /* Called when a touch begins */
+        
+        /* <<< NEW TUTORIAL CODE MAY 11 >>> */
+        if let destintation = touches.first as? UITouch {
+            playerShip.touchPoint = destintation
+            playerShip.travelling = true
+        }
+        /* <<< NEW TUTORIAL CODE MAY 11 >>> */
+    }
+    
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+        playerShip.travelling = false
     }
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
+        
+        /* <<< NEW TUTORIAL CODE MAY 11 >>> */
+        playerShip.update(currentTime)
+        /* <<< NEW TUTORIAL CODE MAY 11 >>> */
+        
     }
     
     func loadStarField() {
@@ -33,9 +49,17 @@ class GameScene: SKScene {
         starField.beginSpawningStars()
     }
     
+    /* <<< NEW TUTORIAL CODE MAY 11 >>> */
     func loadPlayerShip() {
-        let playerShip = KGPlayerShipNode()
-        playerShip.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
         self.addChild(playerShip)
     }
+    
+    lazy var playerShip: KGPlayerShipNode = {
+        let shipNode = KGPlayerShipNode()
+        shipNode.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
+        shipNode.name = "PlayerShip"
+        return shipNode
+    }()
+    /* <<< NEW TUTORIAL CODE MAY 11 >>> */
+    
 }
